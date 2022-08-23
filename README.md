@@ -1,8 +1,8 @@
 # Cuisine Connection
 
-This repository trains a supervised machine learning model to predict the country of origin of a recipe on the basis of the ingredients used in it using a decision tree. We start by training the data on a subset
+This repository trains a supervised machine learning model to predict the country of origin of a recipe on the basis of the ingredients used in it using a decision tree.
 
----
+First, we split the dataset into two parts: a test set and a training set. We start by training a decision tree on the training dataset with information about various recipes from different cuisines and the ingredients they used. Then, we generate a decision tree of desired depth and explore the varius nodes created. Finally, we test our model on the test set and study the results using a confusion matrix.
 
 ## Table of Contents
 
@@ -10,8 +10,6 @@ This repository trains a supervised machine learning model to predict the countr
 2. [Preprocessing](#1)<br>
 3. [Data Modeling](#2)<br>
 4. [Model Evaluation](#4)<br>
-
-<hr>
 
 ## About the data <a id="0"></a>
 
@@ -22,18 +20,18 @@ In 2011, Yong-Yeol Ahn, Sebastian E. Ahnert, James P. Bagrow and Albert-László
 | ![](https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/DS0103EN/labs/images/lab4_fig1_allrecipes.png) | ![](https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/DS0103EN/labs/images/lab4_fig2_epicurious.png) | ![](https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/DS0103EN/labs/images/lab4_fig3_menupan.png) |
 |                                                         www.allrecipes.com                                                          |                                                         www.epicurious.com                                                          |                                                         www.menupan.com                                                          |
 
-Read the research summary at [Flavor Network and the Principles of Food Pairing](http://yongyeol.com/papers/ahn-flavornet-2011.pdf).
+Read the research summary [here](http://yongyeol.com/papers/ahn-flavornet-2011.pdf).
 
 ## Preprocessing <a id="1"></a>
 
-Since the researchers have already processed and compiled the dataset, it is fairly reliable. However, we will take the following steps to clean the dataset :
+Since the researchers have already processed and compiled the dataset, it is fairly reliable and easy to understand. However, we will take the following steps to clean the dataset :
 
 1. Fix column names
 2. Change the cuisine names for better readability
-3. Remove data for cuisines with less than < 50 recipes to avoid a convoluted decision tree
+3. Remove data for cuisines with less than < 50 recipes to avoid a convoluted decision tree with too many nodes
 4. Convert all the Yes's and No's to 1's and 0's for easy processing
 
-Now, we can use this data to build a supervised decision tree which given a set of recipe ingredients, will predict the recipe's cuisine.
+Now, we can use this data to build a supervised decision tree which, given a set of recipe ingredients, will predict the recipe's cuisine.
 
 ## Data Modeling <a id="2"></a>
 
