@@ -1,4 +1,5 @@
-# Cuisine Connection
+![header](https://user-images.githubusercontent.com/68656129/191541821-ca721d81-13ea-4458-937a-9cfdf9feea5f.png)
+
 
 This repository trains a supervised machine learning model to predict the country of origin of a recipe on the basis of the ingredients used in it using a decision tree.
 
