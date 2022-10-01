@@ -75,7 +75,7 @@ In a confusion matrix, the rows represent the actual cuisines from the test set 
 
 <img src="utils/final_confusion_matrix.png">
 
-For instance, by looking at the first row in the confusion matrix, we can see that 60% of the **Chinese** recipes in the test set were correctly classified, although 37% were misclassified as **Korean** and 3% were misclassified as **Indian**.
+For instance, by looking at the third row in the confusion matrix, we can see that 56.67% of the **Chinese** recipes in the test set were correctly classified, although 23.33% were misclassified as **Korean** and 3.33% were misclassified as **Indian**.
 
 We can see that our model is fairly accurate for recipes from Indian and Korean cuisines, with 86.67% and 76.67% accuracies respectively.
 
