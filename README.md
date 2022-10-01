@@ -2,7 +2,7 @@
 
 This repository trains a supervised machine learning model to predict the country of origin of a recipe on the basis of the ingredients used in it using a decision tree.
 
-First, we split the dataset into two parts: a test set and a training set. We start by training a decision tree on the training dataset with information about various recipes from different cuisines and the ingredients they used. Then, we generate a decision tree of desired depth and explore the varius nodes created. Finally, we test our model on the test set and study the results using a confusion matrix.
+First, we split the dataset into two parts: a test set and a training set. We start by training a decision tree on the training dataset with information about various recipes from different cuisines and the ingredients they used. Then, we generate a decision tree of desired depth and explore the various nodes created. Finally, we test our model on the test set and study the results using a confusion matrix.
 
 ## Table of Contents
 
