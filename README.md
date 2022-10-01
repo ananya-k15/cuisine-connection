@@ -48,7 +48,7 @@ For instance, here is a decision tree of depth=3 :
 <img src="trees/asian_cuisine_3.svg">
 
 A decision tree with depth=17 :
-<img src="trees/final_decision_tree.svg">
+<img src="trees/asian_cuisine_2.svg">
 
 ## Model Evaluation <a id="3"></a>
 
@@ -73,7 +73,7 @@ Once the decision tree is created, we can use a **confusion matrix** to explore 
 
 In a confusion matrix, the rows represent the actual cuisines from the test set and the columns represent the cuisines predicted by the decision tree. Each row will sum to 100, and a perfect model should ideally have a 100.00 score for each block in the diagonal.
 
-<img src="final_confusion_matrix.png">
+<img src="utils/final_confusion_matrix.png">
 
 For instance, by looking at the first row in the confusion matrix, we can see that 60% of the **Chinese** recipes in the test set were correctly classified, although 37% were misclassified as **Korean** and 3% were misclassified as **Indian**.
 
